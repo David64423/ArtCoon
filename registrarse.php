@@ -17,7 +17,21 @@
         </nav>
     </header>
     <main>
+        <form action="#" method="POST">
+            <label for="user">Ingrese su usuario</label>
+            <input type="text" name="usuario" id="user">
+            <label for="email">Ingrese su email</label>
+            <input type="text" name="email" id="email">
+            <label for="pass">Ingrese su contraseña</label>
+            <input type="password" name="pass" id="pass">
 
+            <label for="idioma">Seleccione su idioma de preferencia</label>
+            <select name="idiomas" id="idioma">
+                <option value=""></option>
+            </select>
+
+            <button>¡ Registrarme !</button>
+        </form>
     </main>
     <footer>
         
