@@ -1,8 +1,14 @@
 <?php
 
+    require "assets/conec.php";
 
-
-
+    if(isset($_POST['pass'])){
+    $usu = $_POST['user'];
+    $pas = $_POST['pass'];
+    echo $usu;
+    echo "<br>";
+    echo $pas;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -26,7 +32,7 @@
             <label for="usu">Ingrese su usuario</label>
             <input type="text" name="user" id="usu">
             <label for="pass">Ingrese su contraseña</label>
-            <input type="password" name="password" id="pass">
+            <input type="password" name="pass" id="pass">
             <button>Acceder</button>
         </form>
         <a href="registrarse.php">Registrarse</a>
