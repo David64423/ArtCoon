@@ -1,6 +1,8 @@
 create database artcoon;
 use artcoon;
 
+#drop database artcoon;
+
 create table roles(
 	rol_id tinyint auto_increment,
     rol_desc varchar(30),
@@ -19,15 +21,17 @@ insert into idioma (idioma_desc) values ('ingles'),('español');
 
 create table usuarios(
 	usu_id int auto_increment,
-    usu_nick varchar (30),
+    usu_nick varchar (30) unique key,
     idioma_id tinyint,
-    usu_email varchar (50),
+    usu_email varchar (50) unique key,
     usu_pass varchar (30),
     rol_id tinyint,
     primary key (usu_id),
     foreign key (idioma_id) references idioma(idioma_id),
     foreign key (rol_id) references roles(rol_id)
 );
+
+insert into usuarios (usu_nick,idioma_id,usu_email,usu_pass,rol_id) values ('galo',1,'galo@gmail.com','abc',1);
 
 create table tipos(
 	tipo_id int (1) auto_increment,
