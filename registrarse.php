@@ -9,17 +9,22 @@
         $idioma = $_POST['idioma'];
 
         if(verificarRegistros('usu_nick',$usu,'usuarios',$con)){
-            echo "Este usuario ya existe por favor elija otro";
-        }else{
-            $query2 = "insert into usuarios (usu_nick,idioma_id,usu_email,usu_pass,rol_id) values ('$usu',$idioma,'$email','$pas',2);";
-            $consulta2 = mysqli_query($con,$query1);
+            echo "Este usuario ya existe en el sistema, por favor elija otro";
+        }else if(verificarRegistros('usu_email',$email,'usuarios',$con)){
+            echo "Este EMAIL ya existe en el sistema, por favor elija otro";
+        }else {
+            $query1 = "insert into usuarios (usu_nick,idioma_id,usu_email,usu_pass,rol_id) values ('$usu',$idioma,'$email','$pas',2);";
+            $consulta1 = mysqli_query($con,$query1);
 
             if(mysqli_affected_rows($con) > 0){
                 echo "Te has registrado";
             }
         }
 
+        
     }
+    
+    $consulta2 = mysqli_query($con,selectTodo('idioma'));
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -50,7 +55,9 @@
 
             <label for="idiomas">Seleccione su idioma de preferencia</label>
             <select name="idioma" id="idiomas">
-                <option value=""></option>
+                <?php while($dato = mysqli_fetch_assoc($consulta2)){?>
+                <option value="<?php echo $dato['idioma_id']; ?>"><?php echo $dato['idioma_desc']; ?></option>
+                <?php }?>
             </select>
 
             <button>¡ Registrarme !</button>
