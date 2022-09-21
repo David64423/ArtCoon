@@ -1,3 +1,26 @@
+<?php
+    require "assets/conec.php";
+    require "assets/funciones.php";
+    
+    if(isset($_POST['email'])){
+        $usu = $_POST['usuario'];
+        $email = $_POST['email'];
+        $pas = $_POST['pass'];
+        $idioma = $_POST['idioma'];
+
+        if(verificarRegistros('usu_nick',$usu,'usuarios',$con)){
+            echo "Este usuario ya existe por favor elija otro";
+        }else{
+            $query2 = "insert into usuarios (usu_nick,idioma_id,usu_email,usu_pass,rol_id) values ('$usu',$idioma,'$email','$pas',2);";
+            $consulta2 = mysqli_query($con,$query1);
+
+            if(mysqli_affected_rows($con) > 0){
+                echo "Te has registrado";
+            }
+        }
+
+    }
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -25,8 +48,8 @@
             <label for="pass">Ingrese su contraseña</label>
             <input type="password" name="pass" id="pass">
 
-            <label for="idioma">Seleccione su idioma de preferencia</label>
-            <select name="idiomas" id="idioma">
+            <label for="idiomas">Seleccione su idioma de preferencia</label>
+            <select name="idioma" id="idiomas">
                 <option value=""></option>
             </select>
 
