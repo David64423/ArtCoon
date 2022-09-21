@@ -1,3 +1,9 @@
+<?php
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -11,13 +17,23 @@
         <p><a href="index.html">artcoon</a></p>
         <nav>
             <ul>
-                <li><a href="registrarse.php">Registrarse</a></li>
-                <li><a href=""></a></li>
+                <li><a href="index.html">Home</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <form action="#" method="post">
+            <label for="usu">Ingrese su usuario</label>
+            <input type="text" name="user" id="usu">
+            <label for="pass">Ingrese su contraseña</label>
+            <input type="password" name="password" id="pass">
+            <button>Acceder</button>
+        </form>
+        <a href="registrarse.php">Registrarse</a>
+    </main>
+    <footer>
 
-
+    </footer>
     <script src="js/java.js"></script>
 </body>
 </html>

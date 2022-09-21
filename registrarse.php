@@ -16,8 +16,12 @@
             </ul>
         </nav>
     </header>
+    <main>
 
-
+    </main>
+    <footer>
+        
+    </footer>
     <script src="js/java.js"></script>
 </body>
 </html>

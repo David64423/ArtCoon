@@ -7,11 +7,15 @@ create table roles(
     primary key (rol_id)
 );
 
+insert into roles (rol_desc) values ('admin'),('cliente');
+
 create table idioma(
 	idioma_id tinyint auto_increment,
     idioma_desc varchar (30),
     primary key (idioma_id)
 );
+
+insert into idioma (idioma_desc) values ('ingles'),('español');
 
 create table usuarios(
 	usu_id int auto_increment,
