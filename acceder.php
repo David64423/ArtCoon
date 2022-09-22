@@ -38,10 +38,10 @@
 </head>
 <body>
     <header>
-        <p><a href="index.html">artcoon</a></p>
+        <p><a href="index.php">artcoon</a></p>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
             </ul>
         </nav>
     </header>

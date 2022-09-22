@@ -36,7 +36,7 @@
 </head>
 <body>
     <header>
-        <p><a href="index.html">artcoon</a></p>
+        <p><a href="index.php">artcoon</a></p>
         <nav>
             <ul>
                 <li><a href="acceder.php">Acceder</a></li>
