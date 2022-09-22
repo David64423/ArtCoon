@@ -1,0 +1,76 @@
+Mkdir agrega una carpera 
+Ls muestra los archivos 
+$ git add archivo1.txt agrego a la estapa  la estapa de comprometido
+Git status muestra todos los archivos que están comprometidos. (estapa de 
+stage)
+  git add archivo2.txt si queremos reemplazar o hacer un cambio. Dentro de ese mismo archivo. 
+Con git  estatus muestra lo que tenias antes y si marca en rojo no muestra ningún cambio actual hasta que le hagas el git add nuevamente con el nombre del archivo
+$ git commit me lleva al archivo que hice un cambio y le dejo un mensaje.
+Git status volvemos a mirar los cambios si fueron realizados
+
+git commit -m "Commit Inicial" 
+
+
+cd .. volvemos a la carpeta anterior.
+CD- para entrar a una carpeta  escribimos cd nombre de la carpeta  ejemplo: CD workspace después nuevamente cd miweb. Recién ahí estamos en la caperta workspace/miweb.
+
+Pwd muestra donde estoy parado
+
+rm archivo2.txt me borra el archivo y pasa a la estapa de stach
+con git status vemos que esta en la estapa de stach
+después escribo un nombre para ese cambio ejemplo:
+git commit -m”Eliminando archivo2”
+con git status vemos que se realizo el cambio
+luego le damos a “ls” para ver los archivos y vemos que se realizo el procedimiento para borrar ese archivo.
+
+Si queremos recuperar un archivo pasado a la estapa de stach escribimos el comando git restore –- staged archivo1.txt  y el nombre del archivo. 
+
+Para cambiarle el nombre a un arco damos el comando mv con el nombre del archivo y el nuevo nombre ejemplo: mv archivo1.txt    archivo.txt luego tenemos que dar al comando de add igualmente que lo hicimos al cambiar el nombre “git add archivo1.txt  archivo.txt y ahí recién se hacen los cambio.” Después de eso le damos a  (git commit -m “renombrando archivo”)
+Recién ahí se hacen los cambios.
+$ git add archivo1.txt archivo.txt
+
+Con “ls” vemos que se hicieron los cambios.
+$ git status -s muestra en que estapa está cada archivo
+Si marca en rojo y necesitas que pase al siguiente nivel lo agregas con git add y el nombre que aparezca en rojo.
+Si queres que se realicen esos cambios después das un comentario a ese cambio para que se hagan los cambios git commit -m “mostrando los cambios”
+
+Con git diff muestra los cambios que se hicieron
+
+Y si agregamos el archivo nuevamente ya se van hacer los cambios (git add archivo2.txt) ejemplo. Si queremos ver los cambios escribimos git diff –- staged y te muestra todos los cambios.
+Con el git log –oneline  ejecutamos todos los cambios  y muestra el nombre del cambio “siempre teniendo un sentido de la palabra para que sea entendible”
+Git Branch muestra la rama
+Con git checkout -b no movemos de rama de trabajo. 
+Volvemos a ejecutar git Branch y vemos en que rama estamos 
+Trabajamos en el código. Vamos a git status, después lo agregamos al archivo que estamos trabajando y lo comentamos con git comming -m “y un nombre significativo al cambio para que entienda el equipo de trabajo” ejecutamos nuevamente git log –oneline para ver el historial de trabajo
+Con el comando cat archivo2.txt  y el nombre del archivo vemos el contenido del código. 
+Con git push agregamos todos los cambios y lo subimos
+Para crear mas ramas y los demás puedan trabajar es cambiar de rama con (git checkout -b ramaC
+Git push -u origin Ramac//
+Cuando escribimos un comando si tiene una palabra separada va entre comillas 
+
+CLEAR para limpiar el escritorio.
+Control el signo + 
+Git init  se agrega la carpeta de .git 
+Se copia la opción que da en el git ejemplo
+$ git init
+git remote add origin https://github.com/luchito0o/grupo.git
+ git remote (para saber si estas conectado)
+git status -s muestra los archivos subidos M (subido en verde) o en rojo.
+
+
+------------------------------------------
+git branch para ver las ramas del repositorio (si agregamos un nombre creamos una rama)
+Con git checkout -b nombre creamos y  movemos de rama de trabajo.
+git checkout nombre nos movemos a la rama propia
+git branch -d nombre de la rama (borramos la rama que queremos con su respectivo nombre)
+git checkout (movenors entre las ramas)
+git pull actualiza el repositorio de la carpeta.
+git pull origin master (actualiza el repositorio local)
+git push subo los cambios al reposito remoto (subis en la rama que estes )
+git push origin master ()
+Git clone https://github.com/David64423/CursoGit.git 
+
+
+
+
+
