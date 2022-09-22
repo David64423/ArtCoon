@@ -4,4 +4,4 @@ El alcance del sistema es la recolección de datos, la generación de pedidos y 
 
 Los roles se deben dividir en usuarios y administradores. Los usuarios pueden registrarse, enviar mensajes y hacer pedidos. También pueden consultar los pedidos que están en proceso, expuestos en una lista de espera. El administrador puede modificar los datos de los usuarios, modificar los pedidos, utilizar la mensajería interna y consultar los datos.
 
-El sistema que no está incluído en este es el sistema de pago. El administrador generará un link de pago por fuera del sistema.
+El sistema que no está incluído en este es el sistema de pago. El administrador generará un link de pago por fuera del sistema.!
