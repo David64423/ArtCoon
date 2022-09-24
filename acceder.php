@@ -18,7 +18,17 @@
                 $_SESSION['usu'] = $datos['usu_nick'];
                 $_SESSION['email'] = $datos['usu_email'];
                 $_SESSION['rol'] = $datos['rol_id'];
-
+                switch($_SESSION['rol']){
+                    case 1:
+                        header("location:usuario/admin.php");
+                        break;
+                    case 2:
+                        header("location:usuario/usuario.php");
+                        break;
+                        default; 
+                        //ada
+                        break;   
+                    }
             }else{
                 echo "Contraseña incorrecta";
             }
@@ -37,6 +47,7 @@
     <title>ArtConn | Acceder</title>
 </head>
 <body>
+    
     <header>
         <p><a href="index.php">artcoon</a></p>
         <nav>
