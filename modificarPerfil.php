@@ -1,6 +1,17 @@
 <?php
 require "assets/conec.php";
 
+session_start();
+$_SESSION['id'] = $datos ['usu_id'];
+$_SESSION['usu'] = $datos['usu_nick'];
+$_SESSION['email'] = $datos['usu_email'];
+$_SESSION['rol'] = $datos['rol_id'];
+
+if($_SESSION['rol']==1 or $_SESSION['rol']==2){
+
+}
+else
+
 $con = mysqli_connect($serv,$usu,$pass,$bd);
 
 $id=$_POST['id'];
