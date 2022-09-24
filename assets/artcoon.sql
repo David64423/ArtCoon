@@ -18,7 +18,7 @@ create table idioma(
 );
 
 insert into idioma (idioma_desc) values ('ingles'),('español');
-
+# hola tgbbb
 create table usuarios(
 	usu_id int auto_increment,
     usu_nick varchar (30) unique key,
