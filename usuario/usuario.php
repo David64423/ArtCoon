@@ -15,6 +15,15 @@ if($_SESSION['rol']==2){
     <title>Usuarios</title>
 </head>
 <body>
+    <header>
+        <p><a href="../index.php">artcoon</a></p>
+        <nav>
+            <ul>
+                <li><a href="../acceder.php">Acceder</a></li>
+                <li><a href="../modificarPerfil.php">Modificar perfil</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1> Usuarios</h1>
       <?php 
        echo "Bienvenido ".$_SESSION['usu'];

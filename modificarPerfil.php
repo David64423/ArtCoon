@@ -2,19 +2,18 @@
 require "assets/conec.php";
 
 session_start();
-$_SESSION['id'] = $datos ['usu_id'];
-$_SESSION['usu'] = $datos['usu_nick'];
-$_SESSION['email'] = $datos['usu_email'];
-$_SESSION['rol'] = $datos['rol_id'];
+$_SESSION['id'] ;
+$_SESSION['usu'] ;
+$_SESSION['email'] ;
+$_SESSION['rol'] ;
 
 if($_SESSION['rol']==1 or $_SESSION['rol']==2){
 
-}
-else
+
 
 $con = mysqli_connect($serv,$usu,$pass,$bd);
 
-$id=$_POST['id'];
+$id=$_SESSION['id'];
 $sqlmostrar="select * from usuarios where usu_id=$id;";
 
 $resulset=mysqli_query($con,$sqlmostrar);
@@ -54,3 +53,12 @@ $resulset=mysqli_query($con,$sqlmostrar);
     </form>
 </body>
 </html>
+<?php
+ }
+
+ else{
+     echo "ACCESO NO AUTORIZADO";
+     exit();
+ }
+
+?>
