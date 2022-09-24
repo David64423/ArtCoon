@@ -59,6 +59,7 @@ git status -s muestra los archivos subidos M (subido en verde) o en rojo.
 
 
 ------------------------------------------
+vamos a la carpeta y pone code .. y nos abre el visual con la carpeta 
 git branch para ver las ramas del repositorio (si agregamos un nombre creamos una rama)
 Con git checkout -b nombre creamos y  movemos de rama de trabajo.
 git checkout nombre nos movemos a la rama propia
@@ -69,6 +70,16 @@ git pull origin master (actualiza el repositorio local)
 git push subo los cambios al reposito remoto (subis en la rama que estes )
 git push origin master ()
 Git clone https://github.com/David64423/CursoGit.git 
+git push origin master sube al reposito a la rama master
+git status para agregar los datos 
+git add .
+git status. 
+git commit -m "y el mensaje"
+git status para agregar los cambios 
+git checkout master  (movemos a la rama master para poder subir a la rama master lo de mi rama) 
+git merge  lucho (ponemos la rama del cambio del cual tenemos para subir, subimos los cambios de la rama lucho al master)
+git push origin master 
+
 
 
 
