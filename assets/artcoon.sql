@@ -18,7 +18,7 @@ create table idioma(
 );
 
 insert into idioma (idioma_desc) values ('ingles'),('español');
-
+# hola tgbbb
 create table usuarios(
 	usu_id int auto_increment,
     usu_nick varchar (30) unique key,
@@ -85,6 +85,7 @@ create table pedidos(
     com_publi bool,
     desc_id int,
     
+
     foreign key (tipo_id) references tipos(tipo_id),
     foreign key (tam_id) references tamanio(tam_id),
     foreign key (personaje_id) references personaje(personaje_id),
@@ -94,7 +95,15 @@ create table pedidos(
     primary key (ped_id, usu_id)
 );
 
-
+create table chat(
+    chat_id int auto_increment,
+    usu_id int, #emisor
+    receptor_id int,
+    chat_texto varchar(255),
+    chat_fecha date,
+    foreign key (usu_id) references usuarios(usu_id),
+    primary key (chat_id)
+);
 
 
 
