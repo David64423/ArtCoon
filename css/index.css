@@ -1,4 +1,8 @@
-body{
-    background-color:var(#ffff);
-    
+.muestraPrincipal{
+    min-width: 100vw;
+    min-height: 92vh;
+    background-image: url(../img/cristian.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }

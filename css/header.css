@@ -1,0 +1,38 @@
+:root{
+    --backHeder : var(--c3);
+    --colorTexto1 : white;
+
+}
+
+.header{
+    width: 100vw;
+    height: 8vh;
+    background-color: var(--backHeder);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header__logo{
+    width: 50vw;
+    padding-left: 1rem;
+}
+
+.header__menu{
+    width: 50vw;
+}
+
+.header__menu__lista{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.__lista__item{
+
+}
+
+.__item__link{
+    text-decoration: none;
+    color: var(--colorTexto1);
+}
