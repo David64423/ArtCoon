@@ -1,6 +1,6 @@
 <?php
-    require "assets/conec.php";
-    require "assets/funciones.php";
+    require "../sql/conec.php";
+    require "../components/funciones.php";
     
     if(isset($_POST['email'])){
         $usu = $_POST['usuario'];
@@ -33,14 +33,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArtConn | Registrarse</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/variables.css">
 </head>
 <body>
-    <header>
-        <p><a href="index.php">artcoon</a></p>
-        <nav>
-            <ul>
-                <li><a href="acceder.php">Acceder</a></li>
-                <li><a href=""></a></li>
+    <header class="header">
+        <div class="header__logo">
+            <p>
+                <a href="index.php">artcoon</a>
+            </p>
+        </div>
+        <nav class="header__menu">
+            <ul class="header__menu__lista">
+                <li class="__lista__item">
+                    <a class="__item__link" href="../index.php">Home</a>
+                </li>
+                <li class="__lista__item">
+                    <a class="__item__link" href="acceder.php">Acceder</a>
+                </li>
+                <li class="__lista__item">
+                    <a class="__item__link" href="registrarse.php">Registrarse</a>
+                </li>
             </ul>
         </nav>
     </header>

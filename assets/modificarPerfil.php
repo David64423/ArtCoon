@@ -1,5 +1,5 @@
 <?php
-require "assets/conec.php";
+require "../sql/conec.php";
 
 session_start();
 $_SESSION['id'] ;
@@ -26,8 +26,30 @@ $resulset=mysqli_query($con,$sqlmostrar);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modificar Perfil</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/variables.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__logo">
+            <p>
+                <a href="index.php">artcoon</a>
+            </p>
+        </div>
+        <nav class="header__menu">
+            <ul class="header__menu__lista">
+                <li class="__lista__item">
+                    <a class="__item__link" href="../index.php">Home</a>
+                </li>
+                <li class="__lista__item">
+                    <a class="__item__link" href="assets/acceder.php">Acceder</a>
+                </li>
+                <li class="__lista__item">
+                    <a class="__item__link" href="assets/registrarse.php">Registrarse</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <h1>Editar datos:</h1><br><br>
     <form action="" method="POST">
         <table>
