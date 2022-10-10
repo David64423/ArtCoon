@@ -1,0 +1,19 @@
+git branch >>> Para ver las ramas en repositorio local uwu <3.
+git branch nombreRama >>> estamos creando un branch de ese nombre.
+git branch -d nombreRama >>> para borrar esa rama específica.
+git checkout >>> para moverse entre ramas corte tarzán. (para ir de master a nombreRama u nombreOtraRama)
+git checkout -b nombreOtraRama >>> te crea la rama y te posiciona en esa rama.
+git pull origin master >>> (PULL = TRAER) te ACTUALIZA el repositorio local. (O sea, traer los cambios del repositorio master)
+git push origin master >>> subir los cambios al repositorio remoto.
+
+- arrancar en master
+- pull
+- checkout branchDana
+- merge master // se pullea el master con mi branch
+- ahi trabajas 
+	git add
+	git commit
+	git checkout master
+	git pull (por las duads)
+	git merge branchDana (le paso los cambios en mi branch)
+	git push
