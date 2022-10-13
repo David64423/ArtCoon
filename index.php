@@ -14,7 +14,7 @@
     <header class="header">
         <div class="header__logo">
             <p>
-                <a href="index.php">artcoon</a>
+                <a id="home" href="index.php">Artcoon</a>
             </p>
         </div>
         <nav class="header__menu">

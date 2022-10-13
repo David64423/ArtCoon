@@ -1,8 +1,87 @@
 .muestraPrincipal{
-    min-width: 100vw;
+    min-width: 100%;
     min-height: 92vh;
-    background-image: url(../img/cristian.png);
-    background-size: cover;
+    background-color: var(--c5);
+    background-image: url(../img/uno.jpeg);
+    background-size: 100% 160%;
     background-repeat: no-repeat;
     background-position: center;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-name: cambioImagen;
+}
+
+@keyframes cambioImagen{
+    /*0%{
+        background-image: url(../img/dos.jpeg);
+        background-size: 100% 160%;
+    }*/
+
+
+    15%{
+        background-image: url(../img/tres.jpeg);
+        background-size: 100% 100%;
+    }
+
+
+
+
+
+    27%{
+        background-image: url(../img/cuatro.jpeg);
+        background-size: 100% 130%;
+    }
+    40%{
+        background-image: url(../img/Dibujo3.jpeg);
+        background-size: 100% 120%;
+    }
+
+    55%{
+        background-image: url(../img/Dibujo5.jpeg);
+        background-size: 90% 100%;
+    }
+
+    65%{
+        background-image: url(../img/Dibujo7.jpeg);
+        background-size: 100% 100%;
+    }
+
+    85%{
+        background-image: url(../img/Dibujo8.jpeg);
+        background-size: 90% 100%;
+        opacity: 100%;
+    }
+
+    
+
+    99%{
+        opacity: 0%;
+        
+    }
+    
+}
+
+
+.__item__link{
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150%;
+}
+
+.__item__link:hover{
+    color:darksalmon;
+}
+
+#home{
+    
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150%;
+    color:darksalmon;
+}
+
+
+#home:hover{
+    color:yellow;
 }
