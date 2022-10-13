@@ -2,11 +2,11 @@
     min-width: 100%;
     min-height: 92vh;
     background-color: var(--c5);
-    background-image: url(../img/uno.jpeg);
-    background-size: 100% 160%;
+    background-image: url(../img/imagenAncha1.jpeg);
+    background-size: 100% 120%;
     background-repeat: no-repeat;
     background-position: center;
-    animation-duration: 30s;
+    animation-duration: 40s;
     animation-iteration-count: infinite;
     animation-fill-mode: backwards;
     animation-name: cambioImagen;
@@ -19,43 +19,39 @@
     }*/
 
 
-    15%{
-        background-image: url(../img/tres.jpeg);
-        background-size: 100% 100%;
+    20%{
+        background-image: url(../img/imagenAncha2.jpeg);
+        
     }
 
 
 
 
 
-    27%{
-        background-image: url(../img/cuatro.jpeg);
-        background-size: 100% 130%;
-    }
     40%{
-        background-image: url(../img/Dibujo3.jpeg);
-        background-size: 100% 120%;
-    }
-
-    55%{
-        background-image: url(../img/Dibujo5.jpeg);
-        background-size: 90% 100%;
-    }
-
-    65%{
-        background-image: url(../img/Dibujo7.jpeg);
-        background-size: 100% 100%;
-    }
-
-    85%{
-        background-image: url(../img/Dibujo8.jpeg);
-        background-size: 90% 100%;
+        background-image: url(../img/imagenAncha3.jpeg);
+        
         opacity: 100%;
     }
+
+    60%{
+        background-image: url(../img/imagenAncha4.jpeg);
+        opacity: 100%;
+    }
+
+    80%{
+        background-image: url(../img/imagenAncha5.jpeg);
+    }
+
+    95%{
+        opacity: 70%;
+    }
+    
 
     
 
     99%{
+        background-image: url(../img/imagenAncha5.jpeg);
         opacity: 0%;
         
     }
