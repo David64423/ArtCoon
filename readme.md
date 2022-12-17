@@ -9,5 +9,4 @@ El sistema que no está incluído en este es el sistema de pago. El administrado
 
 El sistema que no está incluído en este es el sistema de pago. El administrador generará un link de pago por fuera del sistema.
 
-hola quiero ir a dormir jajaj
 
